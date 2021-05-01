@@ -1,0 +1,23 @@
+#!/bin/sh
+
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+
+for x in mount umount sv pacman su ; do
+	alias $x="sudo $x"
+done
+
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	bc="bc -ql" \
+	mkdir="mkdir -pv" \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	sdn="sudo shutdown -h now" \
+	ka="killall" \
+	g="git" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	p="sudo pacman"

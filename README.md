@@ -1,5 +1,7 @@
 # dotfiles
 
+My personal dotfiles.
+
 ## Installation
 
 Use my [deploy script](https://github.com/deboogerxyz/deploy) to auto-install

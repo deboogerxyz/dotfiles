@@ -1,0 +1,7 @@
+#!/bin/sh
+
+while read -r file; do
+	[ -z "$file" ] && continue
+	lf -remote "send select \"$file\""
+	lf -remote "send toggle"
+done

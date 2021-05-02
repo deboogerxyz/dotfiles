@@ -1,6 +1,6 @@
 # dotfiles
 
-##Installation
+## Installation
 
 ```
 git clone https://github.com/deboogerxyz/dotfiles

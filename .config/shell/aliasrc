@@ -21,7 +21,7 @@ alias \
 	g="git" \
 	e="$EDITOR" \
 	v="$EDITOR" \
-	p="sudo pacman"
+	p="sudo pacman" \
 	ffmpeg="ffmpeg -hide_banner" \
 	yt="youtube-dl --add-metadata -i" \
 	yta="yt -x -f bestaudio/best"

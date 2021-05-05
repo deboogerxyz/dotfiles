@@ -10,6 +10,7 @@ endif
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
 Plug 'bling/vim-airline'
 Plug 'ap/vim-css-color'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 set title

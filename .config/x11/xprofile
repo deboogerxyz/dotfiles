@@ -5,7 +5,7 @@ xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources 2>/dev/null
 dwmblocks &
 dunst &
 picom --experimental-backends &
-xautolock -time 5 -locker slock
+xautolock -time 5 -locker slock &
 xset r rate 300 50 &
 unclutter &
 

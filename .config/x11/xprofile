@@ -1,12 +1,12 @@
 #!/bin/sh
 
+remaps &
 setbg &
 xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources
 dwmblocks &
 dunst &
 picom --experimental-backends &
 xautolock -time 5 -locker slock &
-xset r rate 300 50 &
 unclutter &
 
 pidof -s runit &&

@@ -1,35 +1,42 @@
 ! dwm + dmenu
-*border:	#1d2021
-*selbackground:	#83a598
-*selforeground:	#1d2021
-*selborder:	#83a598
+*border:	#2f1e2e
+*selbackground:	#815ba4
+*selforeground:	#2f1e2e
+*selborder:	#815ba4
 
-*background: #1d2021
-! *background: #282828
-! *background: #32302f
-*foreground: #ebdbb2
-*cursorColor: #ebdbb2
-! Black + DarkGrey
-*color0:  #282828
-*color8:  #928374
-! DarkRed + Red
-*color1:  #cc241d
-*color9:  #fb4934
-! DarkGreen + Green
-*color2:  #98971a
-*color10: #b8bb26
-! DarkYellow + Yellow
-*color3:  #d79921
-*color11: #fabd2f
-! DarkBlue + Blue
-*color4:  #458588
-*color12: #83a598
-! DarkMagenta + Magenta
-*color5:  #b16286
-*color13: #d3869b
-! DarkCyan + Cyan
-*color6:  #689d6a
-*color14: #8ec07c
-! LightGrey + White
-*color7:  #a89984
-*color15: #ebdbb2
+! special
+*.foreground:   #a39e9b
+*.background:   #2f1e2e
+*.cursorColor:  #a39e9b
+
+! black
+*.color0:       #2f1e2e
+*.color8:       #776e71
+
+! red
+*.color1:       #ef6155
+*.color9:       #ef6155
+
+! green
+*.color2:       #48b685
+*.color10:      #48b685
+
+! yellow
+*.color3:       #fec418
+*.color11:      #fec418
+
+! blue
+*.color4:       #06b6ef
+*.color12:      #06b6ef
+
+! magenta
+*.color5:       #815ba4
+*.color13:      #815ba4
+
+! cyan
+*.color6:       #5bc4bf
+*.color14:      #5bc4bf
+
+! white
+*.color7:       #a39e9b
+*.color15:      #e7e9db

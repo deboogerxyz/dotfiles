@@ -1,9 +1,3 @@
-! dwm + dmenu
-*border:	#2f1e2e
-*selbackground:	#815ba4
-*selforeground:	#2f1e2e
-*selborder:	#815ba4
-
 ! special
 *.foreground:   #a39e9b
 *.background:   #2f1e2e

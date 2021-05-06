@@ -32,6 +32,7 @@ export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
 export ELECTRUMDIR="${XDG_DATA_HOME:-$HOME/.local/share}/electrum"
 export XAUTHORITY="$XDG_RUNTIME_DIR/xauthority"
 
+export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export LESSHISTFILE="-"
 export LESS=-R
 export QT_QPA_PLATFORMTHEME="gtk2"

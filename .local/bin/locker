@@ -1,0 +1,32 @@
+#!/bin/sh
+
+# A script for screen locking
+# Requires suckless' xssstate
+# and a screen locker
+#
+# If arguments not specified
+# use slock and lock after
+# 30 seconds
+#
+# Example:
+#	locker slock 5
+# Use slock as a locker
+# and lock after 5 seconds
+
+locker=${1:-"slock"}
+waitseconds=${2:-30}
+
+lock() { pidof "$locker" || $locker; }
+
+while true; do
+	# Save CPU usage
+	sleep 0.1
+
+	# Lock if lid has been closed
+	grep "closed" /proc/acpi/button/lid/LID*/state >/dev/null && lock
+
+	# Get idle time of X11 with xssstate
+	elapsed=$(( $(xssstate -i) / 1000 ))
+
+	[ $elapsed -ge $waitseconds ] && lock
+done

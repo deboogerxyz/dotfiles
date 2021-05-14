@@ -1,3 +1,4 @@
 #!/bin/sh
 
-printf "🎼 $(mpc status | sed 1q)"
+#printf "🎼 $(mpc status | sed "/^volume:/d;/\\[paused\\].*/d;/\\[playing\\].*/d")"
+printf "🎼 $(mpc | sed "/^volume:/d;s/\\&/&amp;/g;s/\\[paused\\].*/⏸/g;/\\[playing\\].*/d" | paste -sd ' ' -;)"

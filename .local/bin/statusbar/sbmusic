@@ -1,0 +1,3 @@
+#!/bin/sh
+
+printf "🎼 $(mpc status | sed 1q)"

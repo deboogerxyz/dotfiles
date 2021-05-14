@@ -6,7 +6,7 @@
 #
 # If arguments not specified
 # use slock and lock after
-# 30 seconds
+# 90 seconds
 #
 # Example:
 #	locker slock 5
@@ -14,7 +14,7 @@
 # and lock after 5 seconds
 
 locker=${1:-"slock"}
-waitseconds=${2:-30}
+waitseconds=${2:-90}
 
 lock() { pidof "$locker" || $locker; }
 

@@ -19,7 +19,7 @@ esac
 # If pywal is installed, use it.
 command -v wal >/dev/null 2>&1 &&
 	wal -c >/dev/null 2>&1 &&
-	wal -i "$bgloc" >/dev/null 2>&1 &&
+	wal -i "$bgloc" -o "${XDG_CONFIG_HOME:-$HOME/.config}/wal/postrun" >/dev/null 2>&1 &&
 	pidof dwm >/dev/null && xdotool key super+F5
 
 xwallpaper --zoom "$bgloc"

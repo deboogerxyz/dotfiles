@@ -10,7 +10,7 @@
     padding = 0
     horizontal_padding = 8
     frame_width = 2
-    frame_color = "{color4}"
+    frame_color = "{color5}"
 
     # Define a color for the separator.
     # possible values are:

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+scrot -z -s -f -l style=dash,width=2,color="red" /tmp/screenshot.png
+xclip -selection clipboard -t image/png -i /tmp/screenshot.png
+
+SCREENSHOTDIR=${SCREENSHOTDIR:-$HOME}
+[ ! -d "$SCREENSHOTDIR" ] && mkdir -p "$SCREENSHOTDIR"
+
+cp /tmp/screenshot.png "$SCREENSHOTDIR"/$(date "+%Y-%m-%d-%H.%M.%S").png
+
+rm -f /tmp/screenshot.png
